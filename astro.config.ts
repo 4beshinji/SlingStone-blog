@@ -11,8 +11,6 @@ import {
 import { transformerFileName } from "./src/utils/transformers/fileName";
 import { SITE } from "./src/config";
 
-import cloudflare from "@astrojs/cloudflare";
-
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
@@ -46,7 +44,7 @@ export default defineConfig({
     // See: https://github.com/withastro/astro/issues/14030
     plugins: [tailwindcss()],
     optimizeDeps: {
-      exclude: ["@resvg/resvg-wasm"],
+      exclude: ["@resvg/resvg-js"],
     },
   },
 
@@ -68,6 +66,4 @@ export default defineConfig({
   experimental: {
     preserveScriptOrder: true,
   },
-
-  adapter: cloudflare(),
 });
