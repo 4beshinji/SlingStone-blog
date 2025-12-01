@@ -1,5 +1,4 @@
 {
-  "main": "dist/_worker.js/index.js",
   "name": "sling-stone-blog",
   "compatibility_date": "2025-12-01",
   "compatibility_flags": [
