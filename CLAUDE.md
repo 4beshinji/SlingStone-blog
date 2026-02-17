@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-SlingStoneLOG is a blog built with Astro 5 (based on the AstroPaper theme). It deploys to Cloudflare Pages at https://slingstonelog.pages.dev/. The blog contains Japanese-language content.
+SlingStoneLOG is a blog built with Astro 5 (based on the AstroPaper theme). It deploys to Cloudflare Workers at https://sling-stone-blog.4beshinji.workers.dev/. The blog contains Japanese-language content.
 
 ## Commands
 
@@ -63,8 +63,8 @@ The build command chain: `astro check && astro build && pagefind --site dist && 
 - The index is built from `dist/` then copied to `public/pagefind/`
 
 ## Deployment
-- **Cloudflare Pages** via `wrangler.jsonc` (serves static `dist/` directory)
-- **CI**: GitHub Actions runs lint, format check, and build on push (Node 20, pnpm 10)
+- **Cloudflare Workers** via `wrangler.jsonc` (serves static `dist/` directory)
+- **CI**: GitHub Actions runs lint, format check, and build on push (Node 22, pnpm 10)
 - **Docker**: Multi-stage Dockerfile available (Node build + nginx serve)
 
 ## Conventions
