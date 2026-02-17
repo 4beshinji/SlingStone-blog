@@ -10,6 +10,9 @@ html[data-theme="light"] {
   --accent: #2d6a4f;
   --muted: #f3f4f6;
   --border: #e5e7eb;
+  --success: #16a34a; /* green-600 */
+  --error: #dc2626; /* red-600 */
+  --highlight: #94a3b8; /* slate-400 */
 }
 
 html[data-theme="dark"] {
@@ -18,6 +21,9 @@ html[data-theme="dark"] {
   --accent: #95d5b2;
   --muted: #374151;
   --border: #4b5563;
+  --success: #4ade80; /* green-400 */
+  --error: #f87171; /* red-400 */
+  --highlight: #94a3b8; /* slate-400 */
 }
 
 @theme inline {
@@ -26,6 +32,22 @@ html[data-theme="dark"] {
   --color-accent: var(--accent);
   --color-muted: var(--muted);
   --color-border: var(--border);
+  --color-success: var(--success);
+  --color-error: var(--error);
+  --color-highlight: var(--highlight);
+  --color-foreground-muted: color-mix(
+    in srgb,
+    var(--foreground) 80%,
+    transparent
+  );
+  --color-foreground-subtle: color-mix(
+    in srgb,
+    var(--foreground) 70%,
+    transparent
+  );
+  --font-body:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
 }
 
 @layer base {
@@ -38,7 +60,7 @@ html[data-theme="dark"] {
     @apply overflow-y-scroll scroll-smooth;
   }
   body {
-    @apply flex min-h-svh flex-col bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
+    @apply flex min-h-svh flex-col bg-background font-body text-foreground selection:bg-accent/75 selection:text-background;
   }
   a,
   button {

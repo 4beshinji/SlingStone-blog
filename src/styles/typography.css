@@ -48,7 +48,7 @@
     }
 
     figcaption {
-      @apply opacity-75;
+      @apply text-foreground-muted;
     }
 
     table {
@@ -75,7 +75,7 @@
     }
 
     blockquote {
-      @apply border-s-accent/80 break-words opacity-80;
+      @apply border-s-accent/80 break-words text-foreground-muted;
     }
 
     details {
@@ -104,13 +104,13 @@
   /* https://shiki.style/packages/transformers */
   .astro-code {
     .line.diff.add {
-      @apply relative inline-block w-full bg-green-400/20 before:absolute before:-left-3 before:text-green-500 before:content-['+'];
+      @apply relative inline-block w-full bg-success/20 before:absolute before:-left-3 before:text-success before:content-['+'];
     }
     .line.diff.remove {
-      @apply relative inline-block w-full bg-red-500/20 before:absolute before:-left-3 before:text-red-500 before:content-['-'];
+      @apply relative inline-block w-full bg-error/20 before:absolute before:-left-3 before:text-error before:content-['-'];
     }
     .line.highlighted {
-      @apply inline-block w-full bg-slate-400/20;
+      @apply inline-block w-full bg-highlight/20;
     }
     .highlighted-word {
       @apply rounded-sm border border-border px-0.5 py-px;
