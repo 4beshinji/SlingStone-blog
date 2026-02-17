@@ -8,12 +8,12 @@ featured: false
 draft: false
 tags:
   - Blog
-description:
-  "explain this web site and my skill & motivation."
+description: "explain this web site and my skill & motivation."
 timezone: "Asia/Tokyo"
 ---
 
 ## 私について
+
 私の名前は安部新司といいます。
 
 群馬大学投石学部を主宰し、中央省庁の監視の目が届かない群馬県で悪行の限りを尽くしています。
