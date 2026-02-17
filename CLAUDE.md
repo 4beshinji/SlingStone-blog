@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-SlingStoneLOG is a blog built with Astro 5 (based on the AstroPaper theme). It deploys to Cloudflare Workers at https://sling-stone-blog.4beshinji.workers.dev/. The blog contains Japanese-language content.
+SlingStoneLOG is a blog built with Astro 5 (based on the AstroPaper theme). It deploys to Cloudflare Workers at https://sling-stone-blog.4beshinji.workers.dev/ (custom domain: https://4beshinji.com/). The blog contains Japanese-language content.
 
 ## Commands
 
